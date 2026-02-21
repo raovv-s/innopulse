@@ -1,46 +1,32 @@
 import axios from 'axios';
 
-// Backend-in ana ünvanı (FastAPI uvicorn-un işlədiyi port)
-const API_BASE_URL = "http://127.0.0.1:8000/api/startups";
+// Backend-in ünvanı
+const API_URL = "http://127.0.0.1:8000/api/startups";
 
 export const api = {
-  /**
-   * 1. Bütün startapları bazadan çəkmək üçün
-   */
+  // Bütün startapları bazadan çəkmək
   getStartups: async () => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/`);
+      const response = await axios.get(`${API_URL}/`);
       return response.data;
     } catch (error) {
-      console.error("Məlumatlar gətirilərkən xəta:", error);
+      console.error("Məlumatları çəkərkən xəta:", error);
       return [];
     }
   },
 
-  /**
-   * 2. Yeni startap əlavə etmək üçün
-   */
+  // Yeni startap əlavə etmək
   createStartup: async (startupData) => {
-    try {
-      const response = await axios.post(`${API_BASE_URL}/`, startupData);
-      return response.data;
-    } catch (error) {
-      console.error("Startap yaradılarkən xəta:", error);
-      throw error;
-    }
+    const response = await axios.post(`${API_URL}/`, startupData);
+    return response.data;
   },
 
-  /**
-   * 3. Real AI Analizini başlatmaq üçün
-   * Sənin Dashboard-dakı düymə buna bağlanacaq
-   */
+  // Real AI Analizini başlatmaq (Dashboard-dakı düymə üçün)
   analyzeStartup: async (startupId) => {
     console.log("Real AI Analiz başladılır... ID:", startupId);
     try {
-      // Bizim backend-dəki /analyze endpoint-ini çağırırıq
-      const response = await axios.post(`${API_BASE_URL}/${startupId}/analyze`);
-      
-      // Frontend-in gözlədiyi formata uyğunlaşdırırıq (Mapping)
+      const response = await axios.post(`${API_URL}/${startupId}/analyze`);
+      // Frontend-in gözlədiyi formata uyğunlaşdırırıq
       return {
         score: response.data.health_score,
         status: response.data.status,
@@ -48,11 +34,7 @@ export const api = {
       };
     } catch (error) {
       console.error("AI Analiz xətası:", error);
-      return {
-        score: 0,
-        status: "Error",
-        insights: "Backend bağlantısı qurulmadı və ya AI cavab vermədi."
-      };
+      throw error;
     }
   }
 };
