@@ -1,7 +1,7 @@
 from sqlalchemy import String, Float, Text
 from sqlalchemy.orm import Mapped, mapped_column
 from typing import Optional
-from .database import Base
+from database import Base
 
 class Startup(Base):
     __tablename__ = "startups"

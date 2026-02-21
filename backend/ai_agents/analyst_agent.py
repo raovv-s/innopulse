@@ -3,7 +3,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 from agno.agent import Agent
 from agno.models.openai import OpenAIChat
-from .tools import search_startup_info
+from ai_agents.tools import search_startup_info
 
 # 1. Define the strict output schema
 class StartupAnalysisResult(BaseModel):
