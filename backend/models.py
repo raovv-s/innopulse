@@ -18,3 +18,8 @@ class Startup(Base):
     health_score: Mapped[float] = mapped_column(Float, default=0.0)
     status: Mapped[str] = mapped_column(String(50), default="Pending Analysis")
     ai_recommendation: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True, index=True)
+    username = Column(String(50), unique=True, index=True)
+    hashed_password = Column(String(255))
