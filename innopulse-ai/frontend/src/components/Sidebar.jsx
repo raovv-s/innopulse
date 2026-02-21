@@ -5,7 +5,6 @@ export default function Sidebar({ setView, onLogout }) {
   const menuItems = [
     { name: 'Startups', icon: <Rocket size={20}/>, view: 'list' },
     { name: 'Analytics', icon: <PieChart size={20}/>, view: 'dashboard' },
-    { name: 'Team', icon: <Users size={20}/>, view: 'list' },
   ];
 
   return (

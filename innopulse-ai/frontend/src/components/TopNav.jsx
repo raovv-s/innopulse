@@ -17,19 +17,79 @@ export default function TopNav({ startups }) {
         
         {/* Qaçan Yazı (Marquee Effect) */}
         <div className="flex gap-10 animate-marquee whitespace-nowrap px-10">
-          <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
-            CyberBaku <span className="text-green-500">+12%</span>
-          </span>
-          <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
-            EcoPulse <span className="text-red-500">-5%</span>
-          </span>
-          <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
-            EduVibe <span className="text-green-500">+8%</span>
-          </span>
-          <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
-            MediSync <span className="text-blue-500">STABLE</span>
-          </span>
-        </div>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    Finomica <span className="text-green-500">+14%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    EcoPulse IoT <span className="text-red-500">-12%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    EduVibe AI <span className="text-green-500">+7%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    MediSync <span className="text-blue-500">STABLE</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    AgroVision AI <span className="text-green-500">+9%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    CypherGuard <span className="text-green-500">+18%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    UrbanMap AI <span className="text-red-500">-4%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    LogiSmart <span className="text-green-500">+11%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    SmartShelf <span className="text-red-500">-20%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    LegalBot <span className="text-green-500">+15%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    GeneLink <span className="text-blue-500">STABLE</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    SolarEdge AI <span className="text-green-500">+22%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    FoodCycle <span className="text-red-500">-8%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    DeepScan AI <span className="text-red-500">-15%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    TalentMatch <span className="text-green-500">+10%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    SkyDrone Logistics <span className="text-green-500">+13%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    PaySwift <span className="text-blue-500">STABLE</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    AquaPure IoT <span className="text-green-500">+5%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    VoyageAI <span className="text-red-500">-30%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    GoalSense <span className="text-green-500">+6%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    MetaSphere <span className="text-green-500">+25%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    SecureVote <span className="text-blue-500">STABLE</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    OceanTrack <span className="text-green-500">+4%</span>
+  </span>
+  <span className="flex items-center gap-2 text-[11px] font-bold text-slate-500 uppercase italic">
+    CleanSlate Robotics <span className="text-red-500">-10%</span>
+  </span>
+</div>
       </div>
 
       {/* SAĞ TƏRƏF: Macro Health Gauge & Risk Alerts */}
