@@ -36,3 +36,11 @@ class StartupResponse(StartupBase):
         return [self.health_score]
 
     model_config = ConfigDict(from_attributes=True)
+class UserCreate(BaseModel):
+    username: str
+    password: str
+
+class UserResponse(BaseModel):
+    id: int
+    username: str
+    model_config = ConfigDict(from_attributes=True)
